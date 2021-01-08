@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#meteo {
+    width: 25vw;
+    height: 25VW;
+    border: 1px solid burlywood;
+}
+
+#choix {
+    padding: 10%;
+    width: 50%;
+    height: 100%;
+}
+
+input{
+    width: 20%;
+}
+
+#validation  {
+    border: 1px solid crimson;
+    width: 20%
+}
+
+#ville {
+    text-transform: capitalize;
+}
