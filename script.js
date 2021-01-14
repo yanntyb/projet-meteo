@@ -41,6 +41,9 @@ function afficherBackground(temp){
     else if(temp === "peu nuageux"){
         document.querySelector("#meteo").style.backgroundImage = "url('https://www.h24info.ma/wp-content/uploads/2017/05/unnamed-42-740x431.jpg')";
     }
+    else if(temp === "légères chutes de neige"){
+        document.querySelector("#meteo").style.backgroundImage = "url('https://thumbs.dreamstime.com/b/for%C3%AAt-de-sapin-d-hiver-de-milou-aux-l%C3%A9g%C3%A8res-chutes-de-neige-k-82135991.jpg')";
+    }
 }
 
 function reset(){
