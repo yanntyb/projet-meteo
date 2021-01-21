@@ -1,22 +1,4 @@
-$("#validation").click(function () {
-        if ($("#input").html !== "") {
-            reset();
-            $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/weather?q=" + input.value + "&appid=3078318dd0d0534083752a2e64525eb6&lang=fr",
-                type: "GET",
-                datatyp: "json",
-                success: function (result) {
-                    console.log(result.weather[0].description)
-                    afficherMeteo(result, input.value);
-                    afficherBackground(result.weather[0].description)
-                },
-                error: function () {
-                    $("#ville").html("Ville non valide")
-                }
-            });
-        }
-    }
-)
+
 
 function afficherMeteo(data, ville) {
     $("#ville").html(ville + " :");
